@@ -12,5 +12,11 @@ function validationFunc()
     alert("Number 2 is empty");
     return false;
   }
+
+  if(theForm.num1.value == "" && theForm.num2.value == "")
+  {
+    alert("Please insert number 1 and number 2");
+    return false;
+  }
 return (true);
 }
