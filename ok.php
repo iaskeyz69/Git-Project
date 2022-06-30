@@ -14,10 +14,18 @@
       <input type="text" name="num1" id="num1"> <br><br>
       <p>Enter the second number</p>
       <input type="text" name="num2" id="num2"> <br> <br>
-      <input type="submit" value="add">
+      <input type="submit" value="add"> <br>
       <script src="app.js"></script>
+      <?php 
+      $num1 = $_POST["num1"];
+      $num2 = $_POST["num2"];
+      $result = $num1 + $num2;
+
+      echo "the result is: $result";
+    ?> 
     </fieldset>
     </form>
+   
     
 </body>
 </html>
