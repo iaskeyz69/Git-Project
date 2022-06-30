@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 
-table th {
-    border: 1px;
+table, th {
+    border: 1px solid black;
 
 }
