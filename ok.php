@@ -8,7 +8,7 @@
     <title>Test Website for Server </title>
 </head>
 <body>
-    <form action="ok.php" method="POST">
+    <form action="ok.php" method="POST" name="testForm" onsubmit="return(validationFunc())">
     <fieldset>
     <p>Enter the first number</p>
       <input type="text" name="num1" id="num1"> <br><br>
