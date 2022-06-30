@@ -33,7 +33,28 @@
             <th>Number 2</th>
             <th>Result</th>
         </tr>
-    
+    <?php 
+    $conn = mysqli_connect("localhost:3306 ", "julias2", "julias_123*", "table_db");
+    if($conn -> connect_error) {
+    die("Connection Failed:". $conn -> connect_error);
+}
+
+$sql = "SELECT num1, num2, result from number_digits";
+$result = $conn -> query($sql);
+
+if ($result -> num_rows > 0) {
+    while ($row = $result -> fetch_assoc()) {
+        echo "<tr><td>". $row["num1"]. "</td><td>". $row["num2"]. "</td><td>"
+        . $row["result"]. "</td></tr>";
+    }
+    echo "</table>";
+}
+
+else {
+    echo  "0 result";
+}
+$conn -> close();
+?>
     </table>
    
     
