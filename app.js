@@ -5,7 +5,12 @@ function validationFunc()
   {
     alert("number 1 is empty");
     theForm.num1.focus();
-    return false
+    return false;
+  }
+  if(theForm.num2.value =="")
+  {
+    alert("Number 2 is empty");
+    return false;
   }
 return (true);
 }
