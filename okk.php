@@ -5,7 +5,7 @@ $result = $num1 + $num2;
 
 echo "the result is: $result";
 
-$conn = mysqli_connect("localhost:3306 ", "julias2", "julias_123*", "table_db");
+$conn = mysqli_connect("localhost", "root", "", "table_db");
 if($conn -> connect_error) {
     die("Connection Failed:". $conn -> connect_error);
 }
