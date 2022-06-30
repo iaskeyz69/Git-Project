@@ -25,6 +25,14 @@
     ?> 
     </fieldset>
     </form>
+
+    <table>
+        <tr>
+            <th>Number 1</th>
+            <th>Number 2</th>
+            <th>Result</th>
+        </tr>
+    </table>
    
     
 </body>
