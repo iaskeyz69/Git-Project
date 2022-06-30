@@ -13,7 +13,7 @@ if($conn -> connect_error) {
 else {
     $stmt = $conn ->prepare("Insert into number_digits(num1, num2, result) values(? ,? ,? )");
     
-    $stmt -> bind_param("sss", $num1, $num2, $result);
+    $stmt -> bind_param("iii", $num1, $num2, $result);
     $stmt -> execute();
 
     echo "User Input Successfully";
