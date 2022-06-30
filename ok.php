@@ -8,9 +8,12 @@
     <title>Test Website for Server </title>
 </head>
 <body>
-    <h1>Git Demo Page </h1>
-    <h2>Hello again</h2>
-    <h3>Hello again 2</h3>
+      <p>Enter the first number</p>
+      <input type="text" name="num1" id="num1"> <br><br>
+      <p>Enter the second number</p>
+      <input type="text" name="num2" id="num2"> <br> <br>
+      <input type="submit" value="add">
+      
       <script src="app.js"></script>
 </body>
 </html>
